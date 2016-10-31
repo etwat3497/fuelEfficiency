@@ -34,6 +34,12 @@ public class FuelEfficiency {
         
         //Run vehicle objects, calculate distance and output the distance travelled
         
+        //for(int i=0; i<=4;i++){
+            //obj = new Truck(litres);
+            //obj.getDistance();
+            //System.out.println(obj.toString());
+        //}
+        
         obj = new Truck(litres);
         obj.getDistance();
         System.out.println(obj.toString());
