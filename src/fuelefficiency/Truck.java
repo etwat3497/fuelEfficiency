@@ -10,13 +10,14 @@ package fuelefficiency;
  *
  * @author etwat3497
  */
-public class HybridCar extends Vehicle {
+public class Truck extends Vehicle {
+    
   /**
    * pre: void
    * post: void
    * Default constructor of  class to assign base value to variables
    */
-    public HybridCar(){
+    public Truck(){
         litersOfFuel = 0;
     }
     
@@ -25,7 +26,7 @@ public class HybridCar extends Vehicle {
    * post: void
    * Alternate constructor that takes input and assigns value to variables
    */
-    public HybridCar(double ltrs){
+    public Truck(double ltrs){
         litersOfFuel = ltrs;
     }
     
@@ -36,10 +37,12 @@ public class HybridCar extends Vehicle {
    */
     public double getDistance(){
         //Calculate distance travelled, round the distance and return
-        distance = (litersOfFuel/3.8)*100;
+        distance = (litersOfFuel/14.1)*100;
         distance = super.rounder(distance);
+
         return distance;
     }
+    
     
   /**
    * pre: void
@@ -47,8 +50,7 @@ public class HybridCar extends Vehicle {
    * Method to display how far the vehicle can go
    */
     public String toString(){
-        String output = "Hybrid Car = "+distance;
+        String output = "Truck = "+distance;
         return output;
     }
-    
 }
