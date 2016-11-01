@@ -35,7 +35,7 @@ public class FuelEfficiency {
         while(litresLoop){
             try{
                 //Get user input
-                System.out.println("How many litres of gas do the vehicles have?");
+                System.out.println("How many litres of gas do the vehicle(s) have?");
                 litres = Double.parseDouble(input.nextLine());
                 
                 //Catch bad user input  
@@ -53,7 +53,7 @@ public class FuelEfficiency {
             }
         }
         
-        System.out.println("What types of vehicles do you want to test?\nType 1 for a car, "
+        System.out.println("What types of vehicle(s) do you want to test?\nType 1 for a car, "
         + "2 for a truck, 3 for a hybrid car, 4 for a motorcycle, and 5 to display the results.");
         //While loop to determine which vehicle subclasses to run
         while(vehicleChoiceLoop){
