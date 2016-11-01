@@ -6,6 +6,7 @@
 
 package fuelefficiency;
 //Add imports
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -66,22 +67,22 @@ public class FuelEfficiency {
                 if(vehicleChoice == 1){
                     //Add a new car class to the vehicle arraylist - polymorphism
                     objects.add(new Car(litres));
-                    System.out.println("Will display a car's fuel efficiency when displayed.");
+                    System.out.println("Will show a car's fuel efficiency when the results are displayed.");
                 }
                 else if(vehicleChoice == 2){
                     //Add a new truck class to the vehicle arraylist - polymorphism
                     objects.add(new Truck(litres));
-                    System.out.println("Will display a truck's fuel efficiency when displayed.");
+                    System.out.println("Will show a truck's fuel efficiency when the results are displayed.");
                 }
                 else if(vehicleChoice == 3){
                     //Add a new hybrid car class to the vehicle arraylist - polymorphism
                     objects.add(new HybridCar(litres));
-                    System.out.println("Will display a hybrid car's fuel efficiency when displayed.");
+                    System.out.println("Will show a hybrid car's fuel efficiency when the results are displayed.");
                 }
                 else if(vehicleChoice == 4){
                     //Add a new motorcycle class to the vehicle arraylist - polymorphism
                     objects.add(new Motorcycle(litres));
-                    System.out.println("Will display a motorcycle's fuel efficiency when displayed.");
+                    System.out.println("Will show a motorcycle's fuel efficiency when the results are displayed.");
                 }
                 
                 //If 5 end the program
