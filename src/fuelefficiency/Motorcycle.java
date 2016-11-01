@@ -35,7 +35,9 @@ public class Motorcycle extends Vehicle {
    * Method to calculate the vehicle can travel
    */
     public double getDistance(){
+        //Calculate distance travelled, round the distance and return
         distance = (litersOfFuel/6.3)*100;
+        distance = super.rounder(distance);
         return distance;
     }
     
