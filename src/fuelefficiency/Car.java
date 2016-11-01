@@ -35,7 +35,9 @@ public class Car extends Vehicle{
    * Method to calculate the vehicle can travel
    */
     public double getDistance(){
+        //Calculate distance travelled, round the distance and return
         distance = (litersOfFuel/9.4)*100;
+        distance = super.rounder(distance);
         return distance;
     }
     
